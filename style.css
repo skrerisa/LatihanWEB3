@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif; /* untuk mengatur font keseluruhan di web */
+}
+header {
+    background-color: #eaf2e9; /* warna header atas*/
+    padding-left: 30px; /*selisih pembebasan atas bawah*/
+    padding-top: 30px;
+    display: flex; /* tipe */
+    justify-content: space-between; /* mepet kanan/kiri/tengah */
+    align-items: center; /* mepet atas/tengah/bawah */
+}
+.logo {
+   
+    display: flex; /* tipe */
+    justify-content: center; /* mepet kanan/kiri/tengah */
+    align-items: center; /* mepet atas/tengah/bawah */
+}
+.hero {
+    background-color: #f0f4eb; /* warna background */
+    padding: 20px; /*selisih pembebasan atas bawah*/
+    text-align: center; /*tuisan mepet kanan/kiri/tengah*/
+}
+.services {
+    background-color: #FAFAD2; /* warna background */
+    padding: 20px; /*selisih pembebasan atas bawah*/
+    text-align: center; /*tuisan mepet kanan/kiri/tengah*/
+}
+.service-columns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* mepet atas/tengah/bawah */
+}
+.column {
+    width: 30%;
+}
+.about {
+    background-color: #E6E6FA;
+    padding: 20px;
+    text-align: center;
+}
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 80px;
+}
+.text-content, .performance {
+    width: 45%;
+    text-align: left;
+}
+.graph {
+    height: 100px;
+    background-color: white;
+    border: 1px solid black;
+}
+.contact {
+    background-color: #98FB98;
+    padding: 20px;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input, textarea {
+    margin: 10px 0;
+    width: 80%;
+    padding: 5px;
+}
+button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 30px 30px;
+    margin: 10px ;
+    border-radius: 20%;
+}
+button[type="submit"] {
+    background-color: blue;
+    color: white;
+    padding: 20px 20px;
+    margin: 10px ;
+    border-radius: 20%;
+}
+footer {
+    background-color: #FFE4B5;
+    padding: 10px;
+    text-align: center;
+}
