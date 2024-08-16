@@ -1,72 +1,100 @@
 body {
     font-family: 'Arial', sans-serif; /* untuk mengatur font keseluruhan di web */
+    margin: 0; /* menghilangkan margin default pada body */
+    padding-top: 160px; /* memberikan ruang di atas untuk header tetap */
 }
-header {
-    background-color: #eaf2e9; /* warna header atas*/
-    padding: 20px; /*selisih pembebasan atas bawah*/
 
+header {
+    background-color: #ffffff; /* warna header atas */
+    padding-top: 15px; /* selisih pembebasan atas bawah */
+    padding-left: 15px;
+    padding-bottom: 15px;
     display: flex; /* tipe */
     justify-content: space-between; /* mepet kanan/kiri/tengah */
     align-items: center; /* mepet atas/tengah/bawah */
+
+    position: fixed; /* membuat header tetap di atas */
+    top: 0; /* posisi header tetap di atas */
+    width: 100%; /* lebar header mengikuti lebar layar */
+    z-index: 1000; /* memastikan header berada di atas elemen lainnya */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* menambahkan bayangan agar terlihat seperti menonjol */
 }
+
 .logo {
-   
     display: flex; /* tipe */
     justify-content: center; /* mepet kanan/kiri/tengah */
     align-items: center; /* mepet atas/tengah/bawah */
 }
+
+nav a {
+    color: black; /* warna teks link */
+    text-decoration: none; /* menghilangkan underline */
+    padding: 10px 15px; /* padding dalam navigasi */
+    transition: background-color 0.3s ease; /* animasi transisi warna background */
+}
+
+nav a:hover {
+    background-color: #d3d3d3; /* warna background saat hover */
+    border-radius: 5px; /* membuat pojokan link menjadi membulat */
+}
+
 .hero {
     background-color: #f0f4eb; /* warna background */
-    padding: 0px; /*selisih pembebasan atas bawah*/
-    text-align: center; /*tuisan mepet kanan/kiri/tengah*/
+    padding: 0px; /* selisih pembebasan atas bawah */
+    text-align: center; /* tulisan mepet kanan/kiri/tengah */
 }
+
 .services {
     background-color: #FAFAD2; /* warna background */
-    padding: 70px; /*selisih pembebasan atas bawah*/
-    text-align: center; /*tuisan mepet kanan/kiri/tengah*/
+    padding-top: 120px; /* selisih pembebasan atas bawah */
+    text-align: center; /* tulisan mepet kanan/kiri/tengah */
 }
+
 .service-columns {
     display: flex;
     justify-content: space-around;
     align-items: center; /* mepet atas/tengah/bawah */
 }
+
 .column {
     width: 40%;
 }
+
 .about {
     background-color: #E6E6FA;
-    padding: 70px;
+    padding-top: 120px;
     text-align: center;
 }
+
 .about-content {
     display: flex;
     justify-content: space-around;
     padding-left: 80px;
 }
+
 .text-content, .performance {
     width: 45%;
     text-align: left;
 }
-.graph {
-    height: 100px;
-    background-color: white;
-    border: 1px solid black;
-}
+
 .contact {
     background-color: #98FB98;
     padding: 70px;
     text-align: center;
 }
+
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 input, textarea {
     margin: 10px 0;
     width: 80%;
     padding: 5px;
 }
+
 button {
     background-color: white;
     border: 1px solid black;
@@ -74,6 +102,7 @@ button {
     margin: 10px ;
     border-radius: 20%;
 }
+
 button[type="submit"] {
     background-color: blue;
     color: white;
@@ -81,6 +110,7 @@ button[type="submit"] {
     margin: 10px ;
     border-radius: 20%;
 }
+
 footer {
     background-color: #FFE4B5;
     padding: 10px;
