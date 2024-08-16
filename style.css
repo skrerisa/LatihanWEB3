@@ -3,8 +3,8 @@ body {
 }
 header {
     background-color: #eaf2e9; /* warna header atas*/
-    padding-left: 30px; /*selisih pembebasan atas bawah*/
-    padding-top: 30px;
+    padding: 20px; /*selisih pembebasan atas bawah*/
+
     display: flex; /* tipe */
     justify-content: space-between; /* mepet kanan/kiri/tengah */
     align-items: center; /* mepet atas/tengah/bawah */
@@ -17,12 +17,12 @@ header {
 }
 .hero {
     background-color: #f0f4eb; /* warna background */
-    padding: 20px; /*selisih pembebasan atas bawah*/
+    padding: 0px; /*selisih pembebasan atas bawah*/
     text-align: center; /*tuisan mepet kanan/kiri/tengah*/
 }
 .services {
     background-color: #FAFAD2; /* warna background */
-    padding: 20px; /*selisih pembebasan atas bawah*/
+    padding: 70px; /*selisih pembebasan atas bawah*/
     text-align: center; /*tuisan mepet kanan/kiri/tengah*/
 }
 .service-columns {
@@ -31,11 +31,11 @@ header {
     align-items: center; /* mepet atas/tengah/bawah */
 }
 .column {
-    width: 30%;
+    width: 40%;
 }
 .about {
     background-color: #E6E6FA;
-    padding: 20px;
+    padding: 70px;
     text-align: center;
 }
 .about-content {
@@ -54,7 +54,7 @@ header {
 }
 .contact {
     background-color: #98FB98;
-    padding: 20px;
+    padding: 70px;
     text-align: center;
 }
 form {

@@ -2,103 +2,12 @@
 <html lang="en">
 <head>
     <title>charcoal</title> <!-- nama website di address bar -->
-    <style> 
-       body {
-    font-family: 'Arial', sans-serif; /* untuk mengatur font keseluruhan di web */
-}
-header {
-    background-color: #eaf2e9; /* warna header atas*/
-    padding-left: 30px; /*selisih pembebasan atas bawah*/
-    padding-top: 30px;
-    display: flex; /* tipe */
-    justify-content: space-between; /* mepet kanan/kiri/tengah */
-    align-items: center; /* mepet atas/tengah/bawah */
-}
-.logo {
-   
-    display: flex; /* tipe */
-    justify-content: center; /* mepet kanan/kiri/tengah */
-    align-items: center; /* mepet atas/tengah/bawah */
-}
-.hero {
-    background-color: #f0f4eb; /* warna background */
-    padding: 20px; /*selisih pembebasan atas bawah*/
-    text-align: center; /*tuisan mepet kanan/kiri/tengah*/
-}
-.services {
-    background-color: #FAFAD2; /* warna background */
-    padding: 20px; /*selisih pembebasan atas bawah*/
-    text-align: center; /*tuisan mepet kanan/kiri/tengah*/
-}
-.service-columns {
-    display: flex;
-    justify-content: space-around;
-    align-items: center; /* mepet atas/tengah/bawah */
-}
-.column {
-    width: 30%;
-}
-.about {
-    background-color: #E6E6FA;
-    padding: 20px;
-    text-align: center;
-}
-.about-content {
-    display: flex;
-    justify-content: space-around;
-    padding-left: 80px;
-}
-.text-content, .performance {
-    width: 45%;
-    text-align: left;
-}
-.graph {
-    height: 100px;
-    background-color: white;
-    border: 1px solid black;
-}
-.contact {
-    background-color: #98FB98;
-    padding: 20px;
-    text-align: center;
-}
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-input, textarea {
-    margin: 10px 0;
-    width: 80%;
-    padding: 5px;
-}
-button {
-    background-color: white;
-    border: 1px solid black;
-    padding: 30px 30px;
-    margin: 10px ;
-    border-radius: 20%;
-}
-button[type="submit"] {
-    background-color: blue;
-    color: white;
-    padding: 20px 20px;
-    margin: 10px ;
-    border-radius: 20%;
-}
-footer {
-    background-color: #FFE4B5;
-    padding: 10px;
-    text-align: center;
-}
-
-
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-        <div class="logo"> <img src="gmbr/mcwarteg-removebg-preview.png" alt="logo" width="140" height="125"></div>
-       
+        
+        <div class="logo"> <img src="gmbr/mcwarteg-removebg-preview.png" alt="logo" width="110" height="120"></div>
         <nav>
             <a href="#home">Home</a>&nbsp; &nbsp; &nbsp;
             <a href="#services">Services</a>&nbsp;&nbsp;&nbsp;
@@ -107,17 +16,21 @@ footer {
         </nav>
     </header>
  
+
+    <section id="hero">
     <section class="hero">
-        <p><img src="gmbr/wrteg.jpg" alt="spanduk" width="1450" height="500"></p>
+        <img src="gmbr/wrteg.jpg" alt="spanduk" width="1500" height="500">
     </section>
 
+    <section id="services">
     <section class="services">
-        <img src="gmbr/services.png" alt="service" width="200" height="180">
-        
+        <img src="gmbr/services.png" alt="service" width="200" height="200">
         <div class="service-columns">
             <div class="column">
+                <img src="gmbr/wa-removebg-preview.png" alt="service" width="100" height="80">
                 <h2>Info pemesanan</h2>
-                <p>whatsapp = 098123775649</p>
+                <p>whatsapp = 098123775649</p> 
+        
             </div>
             <div class="column">
                 <h2>Heading</h2>
@@ -130,6 +43,8 @@ footer {
         </div>
     </section>
 
+
+    <section id="about">
     <section class="about">
         <img src="gmbr/info.png" alt="info" width="140" height="120">
         
@@ -151,6 +66,8 @@ footer {
         </div>
     </section>
 
+
+    <section id="contact">
     <section class="contact">
         <img src="gmbr/contact2.png" alt="kontak" width="140" height="120">
         <h2>Kontak</h2>
